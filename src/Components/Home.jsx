@@ -36,7 +36,7 @@ const Home = () => {
      
       {showWorks && (
         <div className="mt-6 p-6 bg-white rounded-lg shadow-lg w-full max-h-96 overflow-y-auto transform transition-all duration-300 hover:scale-105">
-          <h3 className="text-2xl font-semibold text-blue-600 mb-2">My Works</h3>
+          <h3 className="text-2xl font-semibold text-blue-600 mb-">My Works</h3>
           <ul className="list-disc pl-5 space-y-4 text-gray-700">
             <li>Project 1: Online Food Delivery System (React, Spring Boot, Hibernate, MySQL)</li>
             <li>Project 2: Employee Management System (React, Spring Boot, Hibernate, MySQL)</li>

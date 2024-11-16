@@ -3,16 +3,16 @@ import myImage from '../assets/myImage.jpg'; // Adjust the path as per your file
 
 const About = () => {
   return (
-    <div className="p-6 bg-gradient-to-r from-blue-100 via-teal-100 to-green-100 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 flex items-center space-x-6 max-w-4xl mx-auto">
+    <div className="p-6 bg-gradient-to-r from-blue-100 via-teal-100 to-green-100 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 flex flex-col md:flex-row items-center space-y-6 md:space-y-0 md:space-x-6 max-w-4xl mx-auto">
       {/* Image on the left */}
       <img 
         src={myImage} 
         alt="Profile"
-        className="w-32 h-32 rounded-full border-4 border-teal-500 transform hover:scale-110 transition-transform duration-300" // Updated border color
+        className="w-32 h-32 rounded-full border-4 border-teal-500 transform hover:scale-110 transition-transform duration-300"
       />
       
       {/* Text content */}
-      <div className="space-y-4">
+      <div className="space-y-4 text-center md:text-left">
         <h2 className="text-3xl text-teal-600 font-semibold mb-4 hover:text-teal-800 transition-colors duration-300">
           About Me
         </h2>

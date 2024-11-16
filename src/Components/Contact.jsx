@@ -65,9 +65,14 @@ const Contact = () => {
       </p>
 
       {/* Contact Form */}
-      <form onSubmit={sendEmail} className="space-y-6 bg-white p-8 rounded-lg shadow-xl">
+      <form
+        onSubmit={sendEmail}
+        className="space-y-6 bg-white p-8 rounded-lg shadow-xl"
+      >
         <div className="flex flex-col">
-          <label htmlFor="name" className="text-gray-700 font-semibold mb-2">Name</label>
+          <label htmlFor="name" className="text-gray-700 font-semibold mb-2">
+            Name
+          </label>
           <input
             type="text"
             id="name"
@@ -81,7 +86,9 @@ const Contact = () => {
         </div>
 
         <div className="flex flex-col">
-          <label htmlFor="email" className="text-gray-700 font-semibold mb-2">Email</label>
+          <label htmlFor="email" className="text-gray-700 font-semibold mb-2">
+            Email
+          </label>
           <input
             type="email"
             id="email"
@@ -95,7 +102,9 @@ const Contact = () => {
         </div>
 
         <div className="flex flex-col">
-          <label htmlFor="message" className="text-gray-700 font-semibold mb-2">Message</label>
+          <label htmlFor="message" className="text-gray-700 font-semibold mb-2">
+            Message
+          </label>
           <textarea
             id="message"
             name="message"
@@ -118,13 +127,21 @@ const Contact = () => {
 
       {/* Status Message */}
       {statusMessage && (
-        <p className="mt-4 text-center text-gray-700 font-semibold">{statusMessage}</p>
+        <p className="mt-4 text-center text-gray-700 font-semibold">
+          {statusMessage}
+        </p>
       )}
 
       {/* Conditionally show contact information after button click */}
-     
-       
-      
+      {showContactInfo && (
+        <div className="mt-6 text-center text-gray-700">
+          <p>Contact Info:</p>
+          <ul className="space-y-2 mt-4">
+            <li>Phone: +1 (123) 456-7890</li>
+            <li>Email: example@domain.com</li>
+          </ul>
+        </div>
+      )}
     </div>
   );
 };

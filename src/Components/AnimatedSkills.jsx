@@ -74,12 +74,12 @@ const AnimatedSkills = () => {
   };
 
   return (
-    <div className="p-8 bg-gradient-to-br from-teal-100 via-purple-50 to-slate-100 rounded-xl shadow-lg max-w-7xl mx-auto">
+    <div className="p-8 bg-gradient-to-br from-teal-100 via-purple-50 to-slate-100 rounded-xl shadow-lg max-w-7xl mx-auto overflow-auto">
       <h2 className="text-4xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-teal-500 via-purple-500 to-slate-700 text-center mb-12">
         My Skills
       </h2>
       <motion.div
-        className="grid gap-8 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5"
+        className="grid gap-8 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6"
         variants={containerVariants}
         initial="hidden"
         animate="visible"
@@ -87,14 +87,14 @@ const AnimatedSkills = () => {
         {skills.map((skill, index) => (
           <motion.div
             key={index}
-            className="flex flex-col items-center justify-center p-4 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow"
+            className="flex flex-col items-center justify-center p-6 bg-white rounded-lg shadow-lg hover:shadow-xl transition-shadow"
             variants={itemVariants}
             whileHover="hover"
             whileTap="tap"
             animate="shake" // Added shake animation on hover
           >
-            <div className="text-5xl mb-2">{skill.icon}</div>
-            <p className="text-sm font-semibold text-gray-700">{skill.name}</p>
+            <div className="text-4xl sm:text-5xl mb-2">{skill.icon}</div>
+            <p className="text-xs sm:text-sm font-semibold text-gray-700 text-center">{skill.name}</p>
           </motion.div>
         ))}
       </motion.div>

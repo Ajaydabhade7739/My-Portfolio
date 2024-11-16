@@ -2,28 +2,26 @@ import React from "react";
 
 const Services = () => {
   return (
-    <div className="p-6 bg-blue-50 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 flex items-center space-x-6 max-w-4xl mx-auto">
-      {/* Icon on the left */}
-      <div className="items-center justify-center text-white text-3xl font-semibold transform hover:scale-110 transition-transform duration-300">
-        {/* <i className="fas fa-cogs"></i> Example Icon for Services */}
-      </div>
+    <div className="p-6 sm:p-8 md:p-10 lg:p-12 bg-blue-50 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
+      <div className="max-w-6xl mx-auto">
+        {/* Header */}
+        <div className="text-center mb-8">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl text-blue-600 font-semibold mb-4 hover:text-blue-800 transition-colors duration-300">
+            My Services
+          </h2>
+          <p className="text-lg sm:text-xl text-gray-700 leading-relaxed hover:text-gray-900 transition-colors duration-300">
+            I offer a variety of software development services designed to meet
+            the specific needs of businesses. From backend development to frontend
+            interfaces, I provide end-to-end solutions that are efficient and
+            user-friendly.
+          </p>
+        </div>
 
-      {/* Text content */}
-      <div className="space-y-4">
-        <h2 className="text-3xl text-blue-600 font-semibold mb-4 hover:text-blue-800 transition-colors duration-300">
-          My Services
-        </h2>
-        <p className="text-lg text-gray-700 mb-6 leading-relaxed hover:text-gray-900 transition-colors duration-300">
-          I offer a variety of software development services designed to meet
-          the specific needs of businesses. From backend development to frontend
-          interfaces, I provide end-to-end solutions that are efficient and
-          user-friendly.
-        </p>
-
-        <div className="space-y-6">
+        {/* Services List */}
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {/* Full-Stack Web Development Service */}
-          <div className="p-6 bg-white rounded-lg shadow-md hover:shadow-1xl transition-shadow duration-300 hover:scale-105 transform">
-            <h3 className="text-xl font-semibold text-blue-600 mb-2">
+          <div className="p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 hover:scale-105 transform">
+            <h3 className="text-xl sm:text-2xl font-semibold text-blue-600 mb-2">
               Full-Stack Web Development
             </h3>
             <p className="text-lg text-gray-700">
@@ -33,8 +31,8 @@ const Services = () => {
           </div>
 
           {/* Backend Development & API Integration Service */}
-          <div className="p-6 bg-white rounded-lg shadow-md hover:shadow-2xl transition-shadow duration-300 hover:scale-105 transform">
-            <h3 className="text-xl font-semibold text-blue-600 mb-2">
+          <div className="p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 hover:scale-105 transform">
+            <h3 className="text-xl sm:text-2xl font-semibold text-blue-600 mb-2">
               Backend Development & API Integration
             </h3>
             <p className="text-lg text-gray-700">
@@ -44,8 +42,8 @@ const Services = () => {
           </div>
 
           {/* Frontend Development Service */}
-          <div className="p-6 bg-white rounded-lg shadow-md hover:shadow-2xl transition-shadow duration-300 hover:scale-105 transform">
-            <h3 className="text-xl font-semibold text-blue-600 mb-2">
+          <div className="p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 hover:scale-105 transform">
+            <h3 className="text-xl sm:text-2xl font-semibold text-blue-600 mb-2">
               Frontend Development
             </h3>
             <p className="text-lg text-gray-700">
@@ -55,8 +53,8 @@ const Services = () => {
           </div>
 
           {/* Database Design & Management Service */}
-          <div className="p-6 bg-white rounded-lg shadow-md hover:shadow-2xl transition-shadow duration-300 hover:scale-105 transform">
-            <h3 className="text-xl font-semibold text-blue-600 mb-2">
+          <div className="p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 hover:scale-105 transform">
+            <h3 className="text-xl sm:text-2xl font-semibold text-blue-600 mb-2">
               Database Design & Management
             </h3>
             <p className="text-lg text-gray-700">
@@ -66,8 +64,8 @@ const Services = () => {
           </div>
 
           {/* Application Optimization & Maintenance Service */}
-          <div className="p-6 bg-white rounded-lg shadow-md hover:shadow-2xl transition-shadow duration-300 hover:scale-105 transform">
-            <h3 className="text-xl font-semibold text-blue-600 mb-2">
+          <div className="p-6 bg-white rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300 hover:scale-105 transform">
+            <h3 className="text-xl sm:text-2xl font-semibold text-blue-600 mb-2">
               Application Optimization & Maintenance
             </h3>
             <p className="text-lg text-gray-700">

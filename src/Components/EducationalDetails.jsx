@@ -22,7 +22,7 @@ const EducationalDetails = () => {
             </tr>
           </thead>
           <tbody>
-            {[
+            {[ 
               {
                 level: "PG-DAC",
                 stream: "Advanced Computing",
